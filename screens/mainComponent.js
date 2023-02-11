@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { View } from "react-native";
 import { SONGS } from "../shared/songs";
-import DirectoryScreen from "./DirectoryScreen";
-import SongInfoScreen from "./SongInfoScreen";
+import DirectoryScreen from "../screens/DirectoryScreen";
+import SongInfoScreen from "../screens/SongInfoScreen";
 
 const Main = () => {
   const [songs, setSongs] = useState(SONGS);
