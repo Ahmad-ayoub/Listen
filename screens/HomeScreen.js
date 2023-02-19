@@ -6,7 +6,7 @@ import { PARTNERS } from "../shared/partners";
 import { ScrollView } from "react-native-gesture-handler";
 import { useState } from "react";
 
-const featuredItem = ({ item }) => {
+const FeaturedItem = ({ item }) => {
   if (item) {
     return (
       <Card containerStyle={{ padding: 0 }}>
@@ -35,9 +35,9 @@ const HomeScreen = () => {
 
   return (
     <ScrollView>
-      <featuredItem item={featSong} />
-      <featuredItem item={featPromotion} />
-      <featuredItem item={featPartner} />
+      <FeaturedItem item={featSong} />
+      <FeaturedItem item={featPromotion} />
+      <FeaturedItem item={featPartner} />
     </ScrollView>
   );
 };
