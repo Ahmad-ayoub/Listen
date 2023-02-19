@@ -1,34 +1,30 @@
 export const PARTNERS = [
-    {
-        id: 0,
-        name: 'Bootstrap Outfitters',
-        image: require("../assets/images/bootstrap-logo.png"),
-        featured: false,
-        description:
-            "Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.",
-    },
-    {
-        id: 1,
-        name: 'Git Out Expeditions',
-        image: require("../assets/images/git-logo.png"),
-        featured: false,
-        description:
-            'Join Git Out Expeditions to explore new horizons with a group of other adventurers!',
-    },
-    {
-        id: 2,
-        name: 'Mongo Fly Shop',
-        image: require("../assets/images/mongo-logo.png"),
-        featured: false,
-        description:
-            'Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.',
-    },
-    {
-        id: 3,
-        name: 'Node Outdoor Apparel',
-        image: require("../assets/images/node-logo.png"),
-        featured: true,
-        description:
-            'From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.',
-    },
+  {
+    id: 0,
+    name: "Anghami",
+    image: require("../assets/images/partners/Anghami.png"),
+    featured: false,
+    description: "Music of the Arab World",
+  },
+  {
+    id: 1,
+    name: "Apple Music",
+    image: require("../assets/images/partners/Apple_Music.jpg"),
+    featured: false,
+    description: "Millions of songs at the touch of your iphone",
+  },
+  {
+    id: 2,
+    name: "Spotify",
+    image: require("../assets/images/partners/Spotify.png"),
+    featured: false,
+    description: "Every song, Every where",
+  },
+  {
+    id: 3,
+    name: "Tidal",
+    image: require("../assets/images/partners/Tidal.jpg"),
+    featured: true,
+    description: "High quality music, to hear every decible beat in your ear",
+  },
 ];
