@@ -1,5 +1,5 @@
 import { FlatList } from "react-native";
-import { Avatar, ListItem } from "react-native-elements";
+import { Avatar, Icon, ListItem } from "react-native-elements";
 import { useState } from "react";
 import { SONGS } from "../shared/songs";
 
