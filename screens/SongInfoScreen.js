@@ -26,7 +26,11 @@ const SongInfoScreen = ({ route }) => {
       contentContainerStyle={{ marginHorizontal: 20, paddingVertical: 20 }}
       ListHeaderComponent={
         <>
-          <RenderSong song={song} />
+          <RenderSong
+            song={song}
+            isFavorite={favorite}
+            markFavorite={() => setFavorite(true)}
+          />
           <Text style={styles.commentsTitle}>Comments</Text>
         </>
       }

@@ -3,7 +3,8 @@ import { Card } from "react-native-elements";
 import { StyleSheet } from "react-native";
 import { Icon } from "react-native-elements";
 
-const RenderSong = ({ song }) => {
+const RenderSong = (props) => {
+  const { song } = props;
   if (song) {
     return (
       <Card style={styles.cardContainer}>
@@ -22,12 +23,17 @@ const RenderSong = ({ song }) => {
         </Card.Image>
         <Text style={{ margin: 20 }}>{song.description}</Text>
         <Icon
-          name="heart-o"
+          name={props.isFavorite ? "heart" : "heart-o"}
           type="font-awesome"
           color="#f50"
           raised
           reverse
-        ></Icon>
+          onPress={() =>
+            props.isFavorite
+              ? console.log("Already set as a favorite")
+              : props.markFavorite()
+          }
+        />
       </Card>
     );
   }
